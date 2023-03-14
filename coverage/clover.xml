@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1678808282909" clover="3.2.0">
-  <project timestamp="1678808282909" name="All files">
-    <metrics statements="43" coveredstatements="30" conditionals="18" coveredconditionals="11" methods="15" coveredmethods="8" elements="76" coveredelements="49" complexity="0" loc="43" ncloc="43" packages="8" files="12" classes="12"/>
+<coverage generated="1678808904634" clover="3.2.0">
+  <project timestamp="1678808904634" name="All files">
+    <metrics statements="43" coveredstatements="30" conditionals="18" coveredconditionals="9" methods="15" coveredmethods="8" elements="76" coveredelements="47" complexity="0" loc="43" ncloc="43" packages="8" files="12" classes="12"/>
     <package name="components">
       <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="index.tsx" path="/Users/adonaipinheiro/Documents/Github/FIAPAula3/src/components/index.tsx">
@@ -12,8 +12,8 @@
       <metrics statements="10" coveredstatements="8" conditionals="4" coveredconditionals="2" methods="3" coveredmethods="3"/>
       <file name="index.tsx" path="/Users/adonaipinheiro/Documents/Github/FIAPAula3/src/components/Button/index.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="18" count="14" type="stmt"/>
-        <line num="20" count="14" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
       </file>
       <file name="styles.ts" path="/Users/adonaipinheiro/Documents/Github/FIAPAula3/src/components/Button/styles.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -21,20 +21,20 @@
       </file>
       <file name="useButton.ts" path="/Users/adonaipinheiro/Documents/Github/FIAPAula3/src/components/Button/useButton.ts">
         <metrics statements="7" coveredstatements="5" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="2"/>
-        <line num="11" count="14" type="stmt"/>
-        <line num="12" count="28" type="cond" truecount="2" falsecount="2"/>
-        <line num="14" count="14" type="stmt"/>
-        <line num="23" count="14" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="12" count="8" type="cond" truecount="2" falsecount="2"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
         <line num="32" count="0" type="stmt"/>
         <line num="42" count="0" type="stmt"/>
-        <line num="46" count="14" type="stmt"/>
+        <line num="46" count="4" type="stmt"/>
       </file>
     </package>
     <package name="components.Input">
-      <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
       <file name="index.tsx" path="/Users/adonaipinheiro/Documents/Github/FIAPAula3/src/components/Input/index.tsx">
-        <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="13" count="14" type="stmt"/>
+        <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="13" count="4" type="stmt"/>
       </file>
       <file name="styles.ts" path="/Users/adonaipinheiro/Documents/Github/FIAPAula3/src/components/Input/styles.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -49,14 +49,14 @@
       </file>
     </package>
     <package name="screens.SignIn">
-      <metrics statements="6" coveredstatements="5" conditionals="6" coveredconditionals="4" methods="3" coveredmethods="2"/>
+      <metrics statements="6" coveredstatements="5" conditionals="6" coveredconditionals="3" methods="3" coveredmethods="2"/>
       <file name="index.tsx" path="/Users/adonaipinheiro/Documents/Github/FIAPAula3/src/screens/SignIn/index.tsx">
-        <metrics statements="5" coveredstatements="4" conditionals="6" coveredconditionals="4" methods="3" coveredmethods="2"/>
-        <line num="16" count="4" type="stmt"/>
-        <line num="17" count="4" type="stmt"/>
-        <line num="19" count="4" type="stmt"/>
+        <metrics statements="5" coveredstatements="4" conditionals="6" coveredconditionals="3" methods="3" coveredmethods="2"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
         <line num="26" count="0" type="stmt"/>
-        <line num="28" count="7" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
       </file>
       <file name="styles.ts" path="/Users/adonaipinheiro/Documents/Github/FIAPAula3/src/screens/SignIn/styles.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -67,20 +67,20 @@
       <metrics statements="14" coveredstatements="8" conditionals="6" coveredconditionals="3" methods="4" coveredmethods="1"/>
       <file name="useSignIn.ts" path="/Users/adonaipinheiro/Documents/Github/FIAPAula3/src/screens/SignIn/hooks/useSignIn.ts">
         <metrics statements="14" coveredstatements="8" conditionals="6" coveredconditionals="3" methods="4" coveredmethods="1"/>
-        <line num="16" count="4" type="stmt"/>
-        <line num="17" count="4" type="stmt"/>
-        <line num="18" count="4" type="stmt"/>
-        <line num="20" count="4" type="stmt"/>
-        <line num="22" count="4" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
         <line num="26" count="0" type="stmt"/>
         <line num="28" count="0" type="stmt"/>
         <line num="29" count="0" type="stmt"/>
         <line num="30" count="0" type="stmt"/>
-        <line num="34" count="4" type="stmt"/>
+        <line num="34" count="2" type="stmt"/>
         <line num="35" count="0" type="stmt"/>
         <line num="36" count="0" type="stmt"/>
-        <line num="39" count="4" type="stmt"/>
-        <line num="46" count="4" type="stmt"/>
+        <line num="39" count="2" type="stmt"/>
+        <line num="46" count="2" type="stmt"/>
       </file>
     </package>
     <package name="store">

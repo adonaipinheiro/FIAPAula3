@@ -20,7 +20,6 @@ jest.mock('react-i18next', () => ({
     init: () => {},
   },
 }));
-const mock = jest.fn();
 
 describe('SignIn', () => {
   beforeEach(() => {
