@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Institutional should Match snapshot 1`] = `
+<View
+  testID="InstitutionalScreen"
+>
+  <Text>
+    FIAP
+  </Text>
+  <Text>
+    Educação que transforma!
+  </Text>
+</View>
+`;

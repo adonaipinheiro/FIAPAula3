@@ -1,0 +1,205 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignIn should match snapshot 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#ed145b",
+      "flex": 1,
+      "justifyContent": "center",
+      "padding": 20,
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "color": "#FFF",
+        "fontFamily": "Roboto",
+        "fontSize": 42,
+      }
+    }
+  >
+    title
+  </Text>
+  <Text
+    style={
+      {
+        "color": "#FFF",
+        "fontFamily": "Roboto",
+        "fontSize": 18,
+        "marginBottom": 30,
+      }
+    }
+  >
+    subTitle
+  </Text>
+  <View
+    style={
+      {
+        "marginTop": 20,
+        "width": "100%",
+      }
+    }
+  >
+    <TextInput
+      autoCapitalize="none"
+      keyboardType="email-address"
+      onChangeText={[Function]}
+      placeholder="signIn.inputEmail.text"
+      style={
+        {
+          "backgroundColor": "#FFFFFF90",
+          "borderRadius": 8,
+          "minHeight": 40,
+          "padding": 10,
+        }
+      }
+      value=""
+    />
+  </View>
+  <View
+    style={
+      {
+        "marginTop": 20,
+        "width": "100%",
+      }
+    }
+  >
+    <TextInput
+      autoCapitalize="none"
+      onChangeText={[Function]}
+      placeholder="signIn.inputPass.text"
+      secureTextEntry={true}
+      style={
+        {
+          "backgroundColor": "#FFFFFF90",
+          "borderRadius": 8,
+          "minHeight": 40,
+          "padding": 10,
+        }
+      }
+      value=""
+    />
+  </View>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#FFF",
+        "borderRadius": 8,
+        "justifyContent": "center",
+        "marginTop": 20,
+        "minHeight": 40,
+        "opacity": 1,
+        "padding": 10,
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "fontFamily": "Roboto",
+            "fontSize": 16,
+            "fontWeight": "bold",
+          },
+          {
+            "color": "#be0e49",
+          },
+        ]
+      }
+    >
+      signIn.signInButton
+    </Text>
+  </View>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#ed145b",
+        "borderRadius": 8,
+        "justifyContent": "center",
+        "marginTop": 20,
+        "minHeight": 40,
+        "opacity": 1,
+        "padding": 10,
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "fontFamily": "Roboto",
+            "fontSize": 16,
+            "fontWeight": "bold",
+          },
+          {
+            "color": "#FFF",
+          },
+        ]
+      }
+    >
+      signIn.goToSignUpButton
+    </Text>
+  </View>
+</View>
+`;
