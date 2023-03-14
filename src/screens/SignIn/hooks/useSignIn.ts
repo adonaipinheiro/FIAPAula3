@@ -1,6 +1,13 @@
+import {useEffect} from 'react';
+import {
+  PERMISSIONS,
+  request,
+  requestNotifications,
+} from 'react-native-permissions';
 import {useNavigation} from '@react-navigation/native';
 import {useTranslation} from 'react-i18next';
-import {Keyboard} from 'react-native';
+import {Alert, Keyboard} from 'react-native';
+import auth from '@react-native-firebase/auth';
 import * as Yup from 'yup';
 
 // Types
@@ -23,16 +30,22 @@ export default function useSignIn() {
     values: typeof initialValues,
     setSubmitting: (isSubmitting: boolean) => void,
   ) => {
-    dispatch(setUser({email: values.email, token: '@TOKEN'}));
-
-    setTimeout(() => {
-      setSubmitting(false);
-      navigation.replace('TabRouter');
-    }, 5000);
+    Keyboard.dismiss();
+    auth()
+      .signInWithEmailAndPassword(values.email, values.pass)
+      .then(() => {
+        dispatch(setUser({email: values.email, token: '@TOKEN'}));
+        navigation.replace('TabRouter');
+      })
+      .catch(() => {
+        Alert.alert('Atenção', 'Usuário ou senha incorretos');
+      })
+      .finally(() => {
+        setSubmitting(false);
+      });
   };
 
   const goToSignUp = () => {
-    Keyboard.dismiss();
     navigation.push('SignUp');
   };
 
@@ -42,6 +55,16 @@ export default function useSignIn() {
       .required(t('signIn.inputEmail.required') || ''),
     pass: Yup.string().required(t('signIn.inputPass.required') || ''),
   });
+
+  function requestPermissions() {
+    requestNotifications(['alert', 'sound']).then(({status}) => {
+      console.log(status);
+    });
+  }
+
+  useEffect(() => {
+    requestPermissions();
+  }, []);
 
   return {
     SignInSchema,

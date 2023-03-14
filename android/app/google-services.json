@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "491836257994",
+    "project_id": "fiap-25mob",
+    "storage_bucket": "fiap-25mob.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491836257994:android:e291031cfc0a5d628f6633",
+        "android_client_info": {
+          "package_name": "com.fiapaula3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491836257994-526bc2tf43ven596f9eqv7hji839dic6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM6Cif0TW6oCKcuUA9fZEdM6IFZOvQt_g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491836257994-526bc2tf43ven596f9eqv7hji839dic6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

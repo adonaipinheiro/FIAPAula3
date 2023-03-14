@@ -30,7 +30,7 @@ const headerDefaultStyles: StackNavigationOptions = {
 export default function MainRouter() {
   return (
     <Stack.Navigator
-      initialRouteName="TabRouter"
+      initialRouteName="SignIn"
       screenOptions={headerDefaultStyles}>
       <Stack.Screen
         name="SignIn"

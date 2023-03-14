@@ -1,4 +1,7 @@
+import auth from '@react-native-firebase/auth';
+import firestore from '@react-native-firebase/firestore';
 import {useNavigation} from '@react-navigation/native';
+import {Alert} from 'react-native';
 import * as Yup from 'yup';
 
 // Types
@@ -10,13 +13,29 @@ export default function useSignUp() {
   const initialValues = {name: '', email: '', pass: '', confirmPass: ''};
 
   const submit = (
-    values: typeof initialValues,
+    {email, pass, name}: typeof initialValues,
     setSubmitting: (isSubmitting: boolean) => void,
   ) => {
-    setTimeout(() => {
-      setSubmitting(false);
-      navigation.replace('TabRouter');
-    }, 5000);
+    auth()
+      .createUserWithEmailAndPassword(email, pass)
+      .then(user => {
+        firestore()
+          .collection('Users')
+          .doc(user.user.uid)
+          .set({
+            name,
+            email,
+          })
+          .then(() => {
+            navigation.replace('TabRouter');
+          });
+      })
+      .catch(() => {
+        Alert.alert('Atenção', 'Não foi possível concluir a operação');
+      })
+      .finally(() => {
+        setSubmitting(false);
+      });
   };
 
   const goToSignIn = () => {
