@@ -1,0 +1,19 @@
+{
+  "title": "FIAP",
+  "subTitle": "Educação que transforma!",
+
+  "signIn": {
+    "inputEmail": {
+      "text": "Digite seu e-mail",
+      "error": "Por favor insira um e-mail válido",
+      "required": "Este campo é obrigatório"
+    },
+    "inputPass": {
+      "text": "Digite sua senha",
+      "required": "Este campo é obrigatório"
+    },
+    "signInButton": "Entrar",
+    "goToSignUpButton": "Cadastrar",
+    "loadingText": "Carregando..."
+  }
+}
